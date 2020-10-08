@@ -10,21 +10,33 @@
       background-image: url(images/swiftlist.jpg);
       background-repeat: no-repeat;
       background-position: left top;
-      background-size: 30vw;
+      background-size: 500px auto;
+      
+      @media (max-width: 768px) {
+        background-size: 70vw auto;
+      }
     }
     h1 {
       font-size: 8rem;
       line-height: 1em;
-      margin-top: calc(50vh - 10rem);
+      margin-top: calc(50vh - 1.25em);
       margin-bottom: 0;
+      @media (max-width: 414px) {
+        font-size: 4rem;
+      }
     }
     h2 {
-      margin-top: 1rem;
-      margin-bottom: 4rem;
       font-size: 1rem;
+      margin-top: 1em;
+      margin-bottom: 4em;
       text-transform: uppercase;
-      letter-spacing: 3.6rem;
-      padding-left: 3.6rem;
+      letter-spacing: 3.6em;
+      padding-left: 3.6em;
+      @media (max-width: 414px) {
+        font-size: 0.76rem;
+        letter-spacing: 2em;
+        padding-left: 2em;
+      }
     }
     h1, h2 {
       color: #2D906F;
@@ -32,6 +44,9 @@
     }
     .nav {
       font-size: 2rem;
+      @media (max-width: 414px) {
+        font-size: 1.5rem;
+      }
     }
     a {
       text-decoration: none;
